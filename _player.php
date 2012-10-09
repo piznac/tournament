@@ -60,12 +60,12 @@ abstract class _Player
         if ($this->id == 0) {
             $this->_query = "SELECT * FROM `players`";
         } else {
-            $this->_query = "SELECT * FROM `players` WHERE `id` = '{$this->id}' ";	
+            $this->_query = "SELECT * FROM `players` WHERE `id` = '{$this->id}' ";
         }
 
-    $result = $mysqli->query($this->_query);
+        $result = $mysqli->query($this->_query);
 
-    return $result->fetch_assoc();
+        return $result->fetch_assoc();
     }
 
     /**
@@ -81,15 +81,15 @@ abstract class _Player
     protected function _update()
     {
         if ($id != 0) {
-        	$this->_query = "UPDATE `players`
-        	SET `name` = '{$this->name}',`avatar` = '{$this->avatar}'
-        	WHERE `id` = '{$this->id}' ";
+            $this->_query = "UPDATE `players`
+            SET `name` = '{$this->name}',`avatar` = '{$this->avatar}'
+            WHERE `id` = '{$this->id}' ";
 
-        	if ($mysqli->query($this->_query)) {
-        		return true;
-        	}
+            if ($mysqli->query($this->_query)) {
+                return true;
+            }
         } else {
-        	return false;
+            return false;
         }
     }
 }
