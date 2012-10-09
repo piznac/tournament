@@ -7,8 +7,8 @@
 *           - HurstFreelance.com
 *           - piznac
 * @param 
-* id int
-* name string
+* id     int
+* name   string
 * avatar string
 *
 * @return
@@ -24,8 +24,8 @@ abstract class _Player
     /**
     * _create - Creates a record in the players table
     * @param 
-    * $this->name      VARCHAR(45)
-    * $this->avatar    VARCHAR(60)
+    * $this->name   VARCHAR(45)
+    * $this->avatar VARCHAR(60)
     *
     * @return 
     * insert $this->id INT
@@ -45,9 +45,9 @@ abstract class _Player
     * _retrive - retrives records from the players table
     *
     * @param 
-    * $this->name    VARCHAR(45)
-    * $this->id      INT
-    * $this->avatar  VARCHAR(60)
+    * $this->name   VARCHAR(45)
+    * $this->id     INT
+    * $this->avatar VARCHAR(60)
     *
     * (Work in progress)
     *
@@ -72,9 +72,9 @@ abstract class _Player
     * _update - Updates a record in the players table
     *
     * @param 
-    * $this->name    VARCHAR(45)
-    * $this->id      INT -Required
-    * $this->avatar  VARCHAR(60)
+    * $this->name   VARCHAR(45)
+    * $this->id     INT -Required
+    * $this->avatar VARCHAR(60)
     *
     * @return bool
     */
