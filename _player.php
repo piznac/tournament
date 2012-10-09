@@ -10,6 +10,7 @@
 * id     int
 * name   string
 * avatar string
+* query - private mysql string
 *
 * @return
 * object
@@ -23,9 +24,6 @@ abstract class _Player
 
     /**
     * _create - Creates a record in the players table
-    * @param 
-    * $this->name   VARCHAR(45)
-    * $this->avatar VARCHAR(60)
     *
     * @return 
     * insert $this->id INT
@@ -44,14 +42,7 @@ abstract class _Player
     /**
     * _retrive - retrives records from the players table
     *
-    * @param 
-    * $this->name   VARCHAR(45)
-    * $this->id     INT
-    * $this->avatar VARCHAR(60)
-    *
-    * (Work in progress)
-    *
-    * @return object - player
+    * @return assoc array
     * 
     */
     protected function _retrive()
@@ -70,11 +61,6 @@ abstract class _Player
 
     /**
     * _update - Updates a record in the players table
-    *
-    * @param 
-    * $this->name   VARCHAR(45)
-    * $this->id     INT -Required
-    * $this->avatar VARCHAR(60)
     *
     * @return bool
     */
