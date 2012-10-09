@@ -13,7 +13,6 @@ $mysqli->select_db('DBname');
 
 //Check our connection
 if (mysqli_connect_errno()) {
-//printf("Connect failed: %s\n", mysqli_connect_error());
 	throw new Exception("Connect failed: %s\n", mysqli_connect_error());
 
 	exit();
