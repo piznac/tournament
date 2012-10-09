@@ -7,10 +7,10 @@
 *           - HurstFreelance.com
 *           - piznac
 * @param 
-* id     int
-* name   string
-* avatar string
-* query - private mysql string
+* id      int
+* name    string
+* avatar  string
+* query   private mysql string
 *
 * @return
 * object
